@@ -98,5 +98,10 @@ h1{
     border-radius: 15px;
     width: 250px;
     height: 45px;
-    margin-left: 45%;    
+    margin-left: 43%;    
+}
+
+div#videos{
+    align-items: center;
+    flex-direction: column;
 }
