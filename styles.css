@@ -1,103 +1,110 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-body{
-    background-color: #7E7E7E;
-
+body {
+  background-color: #7e7e7e;
 }
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .wrap {
-    display: flexbox;
-  }
-  a {
-    text-decoration: none;
-    color: #fdfdfd;
-    display: block;
-  }
-  ul {
-    list-style: none;
-    background: rgb(194, 145, 145);    
-    position: relative;
-    padding: 0;
-  }
-  li {
-    float: left;
-    font-size: 20px;
-  }
-  ul:after {
-    clear: both;
-  }
-  ul:before,
-  ul:after {
-      content: " ";
-      display: table;
-  }
-  nav {
-    position: relative;
-    text-align: center;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 1px #0E0E0E;
-  
-  }
-  ul.primary li a {
-    display: block;
-    padding: 20px 30px;
-    border-right: 1px solid #3D3D3D;
-  }
-  ul.primary li:last-child a {
-    border-right: none;
-  }
-  ul.primary li a:hover {
-    color: #000;
-  }
-  ul.sub {
-    position: absolute;
-    z-index: 200;
-    box-shadow: 2px 2px 0 #BEBEBE;
-    width: 35%;
-    display:none;
-  }
-  ul.sub li {
-    float: none;
-    margin: 0;
-  }
-  ul.sub li a {
-    border-bottom: 1px dotted #ccc;
-    border-right: none;
-    color: #000;
-    padding: 15px 30px;
-  }
-  ul.sub li:last-child a {
-    border-bottom: none;
-  }
-  ul.primary li:hover ul {
-    display: block;
-  }
-  ul.primary li:hover a {
-    background: #fff;
-    color: #666;
-    text-shadow: none;
-  }
-  ul.primary li:hover > a{
-    color: #000;
-  } 
-  ul.sub li a:hover {
-    color: #fff;
-    background: #000000;
-  }
-  
-h1{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    justify-content: center;
-    border-style: solid ;
-    border-radius: 15px;
-    width: 250px;
-    height: 45px;
-    margin-left: 43%;    
+  display: flexbox;
+}
+a {
+  text-decoration: none;
+  color: #fdfdfd;
+  display: block;
+}
+ul {
+  list-style: none;
+  background: rgb(194, 145, 145);
+  position: relative;
+  padding: 0;
+}
+li {
+  float: left;
+  font-size: 20px;
+}
+ul:after {
+  clear: both;
+}
+ul:before,
+ul:after {
+  content: " ";
+  display: table;
+}
+nav {
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #0e0e0e;
+}
+ul.primary li a {
+  display: block;
+  padding: 20px 30px;
+  border-right: 1px solid #3d3d3d;
+}
+ul.primary li:last-child a {
+  border-right: none;
+}
+ul.primary li a:hover {
+  color: #000;
+}
+ul.sub {
+  position: absolute;
+  z-index: 200;
+  box-shadow: 2px 2px 0 #bebebe;
+  width: 35%;
+  display: none;
+}
+ul.sub li {
+  float: none;
+  margin: 0;
+}
+ul.sub li a {
+  border-bottom: 1px dotted #ccc;
+  border-right: none;
+  color: #000;
+  padding: 15px 30px;
+}
+ul.sub li:last-child a {
+  border-bottom: none;
+}
+ul.primary li:hover ul {
+  display: block;
+}
+ul.primary li:hover a {
+  background: #fff;
+  color: #666;
+  text-shadow: none;
+}
+ul.primary li:hover > a {
+  color: #000;
+}
+ul.sub li a:hover {
+  color: #fff;
+  background: #000000;
 }
 
+h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  justify-content: center;
+  border-style: solid;
+  border-radius: 15px;
+  width: 250px;
+  height: 45px;
+  margin-left: 43%;
+}
+
+.videos {
+  /*deixa os videos alinhados*/
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  row-gap: 50px;
+  padding-left: 120px;
+  padding-top: 30px;
+}
